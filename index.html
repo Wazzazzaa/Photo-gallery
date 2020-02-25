@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Photo gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-$END$
+<div class="title">
+    Photo gallery
+</div>
+<div class="box">
+
+<form id        =  "uploadForm"
+      enctype   =  "multipart/form-data"
+      action    =  "/photo"
+      method    =  "post"
+>
+    <label class="custom-file-upload">
+    <i class= "fa fa-cloud"></i>
+    <input type="file" name="userPhoto" />
+    Select photo
+</label>
+    <label class="custom-file-upload">
+        <input type="submit"  value=""   name="submit">
+        Submit photo <i class="fa fa-arrow-right"></i>
+    </label>
+</form>
+</div>
 </body>
 </html>
